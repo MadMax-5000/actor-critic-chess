@@ -1,0 +1,26 @@
+# --- Python System Files ---
+__pycache__/
+*.py[cod]
+.env
+
+# --- Virtual Environments ---
+venv/
+venv_win/
+
+# --- Project Data (Ignore large files) ---
+*.pgn
+*.pth
+*.pkl
+
+# --- Keep the folder structure! ---
+# We ignore everything in these folders...
+data/raw/*
+data/processed/*
+checkpoints/supervised/*
+checkpoints/rl/*
+
+# ...EXCEPT the .gitkeep files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!checkpoints/supervised/.gitkeep
+!checkpoints/rl/.gitkeep
